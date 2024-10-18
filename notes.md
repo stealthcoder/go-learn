@@ -1,14 +1,26 @@
-# Learn Go
 
-__Learn Go__ is a personal project of my learning journey with Golang.
+## Slice
 
+Like an array, except that its size changes dynamically as you add and remove items.
 
-## Create Modules
+```go
+names := []string{"John", "Jim", "Joey"}
+```
 
-Replaces `example.com/greetings` for location dependency
+## Map
+Initialization
+```go
+make(map[key-type]value-type)
+```
 
-- `go mod edit -replace example.com/greetings=../greetings`
+## For-Loop
+`range` - returns  2 values:
+-  index of current item in the loop
+-  copy of the item's value
+  
+`blank identifier`,  _ (an underscore) ignores the value
+```go
+for _, someValue := range someValues {
 
-Sync module dependencies
-
-- `go mod tidy`
+}
+```
